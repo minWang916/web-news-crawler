@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h2>Điểm tin chứng khoán</h2>
+  {% for row in rows %}
+    <h3><a href="{{row.link}}">{{row.title}}</a></h3>
+    <p>{{row.summary}}</p>
+    <br>
+  {% endfor %}
+</body>
+</html>
