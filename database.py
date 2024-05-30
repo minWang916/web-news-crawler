@@ -16,7 +16,8 @@ def connect_to_mongo():
     except Exception as e:
         print(f"Error connecting to MongoDB: {e}")
         raise
-    
+
 MONGO_CLIENT = connect_to_mongo()
 DATABASE = MONGO_CLIENT["web-news-crawler"]
 LINKS_COLLECTION = DATABASE["links"]
+SOURCES_COLLECTION = DATABASE["sources"]
