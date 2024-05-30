@@ -1,4 +1,5 @@
 BeautifulSoup4
 requests
 pymongo
-dotenv
+python-dotenv
+redis

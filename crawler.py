@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
-from database import LINKS_COLLECTION
+from database import LINKS_COLLECTION, SOURCES_COLLECTION
+from redis_cache import REDIS_CACHE
 
 news_urls = [
   ('https://vnexpress.net/kinh-doanh/chung-khoan', 'https://vnexpress.net', 'title-news', 'description'),
@@ -47,3 +48,6 @@ def fetch_news(url, site, titleTag, summaryTag):
 for element in news_urls:
   url, site, titleTag, summaryTag = element
   fetch_news(url, site, titleTag, summaryTag)
+
+REDIS_CACHE.set("current_index", 1)
+print(int(REDIS_CACHE.get("current_index")))
