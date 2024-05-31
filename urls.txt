@@ -1,0 +1,32 @@
+https://www.indiatimes.com
+title: "cardmain-tittle", "leftcard-tittle", "card-heading"
+
+https://www.news18.com
+title: "container__headline-text"
+
+https://news.google.com
+title: "gPFEn"
+
+https://www.fox9.com/news
+title: "title"
+
+https://finance.yahoo.com
+title: "titles"
+
+people.com
+title: "card__title-text ", "link__wrapper"
+
+forbes.com
+title: "happening__title", "Ccg9Ib-7"
+
+https://www.theguardian.com/international
+title: "show-underline dcr-1ay6c8s"
+
+https://www.cgtn.com
+title: "news-item-content-title"
+
+https://www.scmp.com/news/china
+title: "ContentHeadline-Headline"
+
+https://www.globaltimes.cn
+title: "new_title_s"
