@@ -43,7 +43,6 @@ news_urls = [
   ('https://www.globaltimes.cn/opinion/index.html', 'https://www.globaltimes.cn', 'new_title_ms', 'new_title_ms', 'no-summary'),
 ]
 
-# Insert the news sources into the database
 for source in range(0, len(news_urls)):
   SOURCES_COLLECTION.insert_one({
     "id": source,
@@ -53,8 +52,3 @@ for source in range(0, len(news_urls)):
     "titleTag": news_urls[source][3],
     "summaryTag": news_urls[source][4]
   })
-
-# for source in range(0, len(news_urls)):
-#   source_id = source,
-#   source = news_urls[source][0]
-#   print(source_id, source)
