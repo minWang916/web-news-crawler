@@ -1,5 +1,5 @@
-from database import LINKS_COLLECTION, SOURCES_COLLECTION
-from crawler import fetch_news
+from utils.database import LINKS_COLLECTION, SOURCES_COLLECTION
+from utils.crawler import fetch_news
 
 news_urls = [
   ('https://vnexpress.net/kinh-doanh/chung-khoan', 'https://vnexpress.net', 'title-news', 'title-news', 'description'),
@@ -51,15 +51,15 @@ news_urls = [
   ('https://dantri.com.vn/', 'https://dantri.com.vn', 'article-title', 'article-title', 'no-summary'),
 ]
 
-# for source in range(0, len(news_urls)):
-#   SOURCES_COLLECTION.insert_one({
-#     "id": source,
-#     "source": news_urls[source][0],
-#     "site": news_urls[source][1],
-#     "urlTag": news_urls[source][2],
-#     "titleTag": news_urls[source][3],
-#     "summaryTag": news_urls[source][4]
-#   })
+for source in range(0, len(news_urls)):
+  SOURCES_COLLECTION.insert_one({
+    "id": source,
+    "source": news_urls[source][0],
+    "site": news_urls[source][1],
+    "urlTag": news_urls[source][2],
+    "titleTag": news_urls[source][3],
+    "summaryTag": news_urls[source][4]
+  })
 
 # for news_url in news_urls:
 #   source = news_url[0]

@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-from database import LINKS_COLLECTION
+from utils.database import LINKS_COLLECTION
 
 app = Flask(__name__)
 

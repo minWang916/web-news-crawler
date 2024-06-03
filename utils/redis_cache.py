@@ -7,5 +7,4 @@ REDIS_CACHE = redis.Redis(
   password=REDIS_PASSWORD
 )
 
-REDIS_CACHE.set("current_index", 1)
-print(int(REDIS_CACHE.get("current_index")))
+print(REDIS_CACHE.incr("current_index"))
