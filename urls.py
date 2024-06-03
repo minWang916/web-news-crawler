@@ -1,4 +1,5 @@
 from database import LINKS_COLLECTION, SOURCES_COLLECTION
+from crawler import fetch_news
 
 news_urls = [
   ('https://vnexpress.net/kinh-doanh/chung-khoan', 'https://vnexpress.net', 'title-news', 'title-news', 'description'),
@@ -41,14 +42,29 @@ news_urls = [
   ('https://www.globaltimes.cn', 'https://www.globaltimes.cn', 'new_title_s', 'new_title_s', 'new_form02'),
   ('https://www.globaltimes.cn/china/index.html', 'https://www.globaltimes.cn', 'new_title_ms', 'new_title_ms', 'no-summary'),
   ('https://www.globaltimes.cn/opinion/index.html', 'https://www.globaltimes.cn', 'new_title_ms', 'new_title_ms', 'no-summary'),
+  ('https://cafef.vn/', 'https://cafef.vn', 'item', 'item', 'no-summary'),
+  ('https://fireant.vn/trang-chu', 'https://fireant.vn', 'mb-2 text-lg font-semibold md:text-xl line-clamp-2', 'mb-2 text-lg font-semibold md:text-xl line-clamp-2', 'mb-2 line-clamp-2'),
+  ('https://fireant.vn/trang-chu', 'https://fireant.vn', 'mb-2 text-lg font-semibold md:text-xl line-clamp-2', 'mb-2 text-lg font-semibold md:text-xl line-clamp-2', 'mb-2 line-clamp-2'),
+  ('https://tuoitre.vn/', 'https://tuoitre.vn', 'box-title-text', 'box-title-text', 'no-summary'),
+  ('https://vietnamnet.vn/', 'https://vietnamnet.vn', 'vnn-title', 'vnn-title', 'no-summary'),
+  ('https://www.spiegel.de/schlagzeilen/', 'https://www.spiegel.de', 'py-16 lg:px-24 md:px-24 sm:px-16', 'py-16 lg:px-24 md:px-24 sm:px-16', 'no-summary'),
+  ('https://dantri.com.vn/', 'https://dantri.com.vn', 'article-title', 'article-title', 'no-summary'),
 ]
 
-for source in range(0, len(news_urls)):
-  SOURCES_COLLECTION.insert_one({
-    "id": source,
-    "source": news_urls[source][0],
-    "site": news_urls[source][1],
-    "urlTag": news_urls[source][2],
-    "titleTag": news_urls[source][3],
-    "summaryTag": news_urls[source][4]
-  })
+# for source in range(0, len(news_urls)):
+#   SOURCES_COLLECTION.insert_one({
+#     "id": source,
+#     "source": news_urls[source][0],
+#     "site": news_urls[source][1],
+#     "urlTag": news_urls[source][2],
+#     "titleTag": news_urls[source][3],
+#     "summaryTag": news_urls[source][4]
+#   })
+
+# for news_url in news_urls:
+#   source = news_url[0]
+#   site = news_url[1]
+#   urlTag = news_url[2]
+#   titleTag = news_url[3]
+#   summaryTag = news_url[4]
+#   print(fetch_news(source, site, urlTag, titleTag, summaryTag))
