@@ -21,3 +21,4 @@ MONGO_CLIENT = connect_to_mongo()
 DATABASE = MONGO_CLIENT["web-news-crawler"]
 LINKS_COLLECTION = DATABASE["links"]
 SOURCES_COLLECTION = DATABASE["sources"]
+SOURCES_BACKUP = DATABASE["sources-backup"]

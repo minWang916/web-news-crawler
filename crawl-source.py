@@ -49,6 +49,7 @@ news_urls = [
   ('https://vietnamnet.vn/', 'https://vietnamnet.vn', 'vnn-title', 'vnn-title', 'no-summary'),
   ('https://www.spiegel.de/schlagzeilen/', 'https://www.spiegel.de', 'py-16 lg:px-24 md:px-24 sm:px-16', 'py-16 lg:px-24 md:px-24 sm:px-16', 'no-summary'),
   ('https://dantri.com.vn/', 'https://dantri.com.vn', 'article-title', 'article-title', 'no-summary'),
+  ('https://www.euronews.com/news/international', 'https://www.euronews.com', 'm-object__title__link', 'm-object__title__link', 'no-summary')
 ]
 
 for source in range(0, len(news_urls)):
