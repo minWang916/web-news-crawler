@@ -72,7 +72,7 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
     
  </div>
  
- <div class="block block-search" id="block-search-form">
+ <!-- <div class="block block-search" id="block-search-form">
     <h2 class="title">SEARCH</h2>
     <div class="content"><form action="" method="post" id="search-block-form" accept-charset="UTF-8"><div><div class="container-inline">
     <div class="form-item form-type-textfield form-item-search-block-form">
@@ -83,7 +83,7 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
 <input type="hidden" name="form_id" value="search_block_form">
 </div>
 </div></form></div>
- </div>
+ </div> -->
  
 
 	<div class="block block-views" id="block-views-popular-block">
@@ -123,8 +123,7 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
     </td>
         <td valign="top" id="main-td">
       <div id="main">
-        <!--        --><!----><!--          <hr>-->
-<!--        -->                
+
         <div class="tabs"></div>
                           <div class="region region-content">
       <div class="block block-system" id="block-system-main">
@@ -136,7 +135,7 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
   <ol class="search-results node-results">
   
   
-   {% for article in articles %}
+{% for article in articles %}
 
 
 <li class="search-result">
