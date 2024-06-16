@@ -21,4 +21,8 @@ For detailed report, please visit this link: https://www.overleaf.com/read/bgytb
 `python dispatcher.py`
 
 ### Run the Web UI
+
 `python app.py`
+
+### Project UI
+![UI overview](https://github.com/minWang916/web-news-crawler/assets/116493016/d2e70f9e-b2ca-49e1-9cc0-1a677063a1ae)
